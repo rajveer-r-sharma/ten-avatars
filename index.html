@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#fbf7ef">
-  <meta name="description" content="Explore the Dashavatara, the ten celebrated incarnations of Lord Vishnu, through the devotional teachings of Krishna consciousness.">
-  <title>Dashavatara | The 10 Divine Descents</title>
+  <meta name="description" content="Explore the Dashavatara and the Six Goswamis of Vrindavana through the devotional teachings of Krishna consciousness.">
+  <title>Dashavatara &amp; the Six Goswamis | A Devotional Guide</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = { theme: { extend: { colors: { saffron: '#FF9933', cream: '#fbf7ef', ink: '#27231f' }, fontFamily: { serif: ['Georgia', 'serif'] } } } };
@@ -40,7 +40,7 @@
       <p class="mt-9 text-xs font-bold uppercase tracking-[.28em] text-amber-700 sm:text-sm">Preserver · Protector · Guide</p>
       <h1 class="mx-auto mt-4 max-w-4xl font-serif text-4xl leading-tight text-stone-900 sm:text-6xl lg:text-7xl">Dashavatara:<br class="sm:hidden"> <span class="text-amber-700">The 10 Divine Descents</span></h1>
       <p class="mx-auto mt-6 max-w-2xl text-base leading-7 text-stone-600 sm:text-lg sm:leading-8">When righteousness needs protection, the Supreme Lord descends in many forms. In the teachings of Krishna consciousness, these avatars reveal Krishna’s compassion and divine purpose across the ages.</p>
-      <a href="#avatars" class="mt-8 inline-flex items-center gap-2 rounded-full bg-stone-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-amber-800">Explore the avatars <span aria-hidden="true">↓</span></a>
+      <div class="mt-8 flex flex-wrap justify-center gap-3"><a href="#avatars" class="inline-flex items-center gap-2 rounded-full bg-stone-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-amber-800">Explore the avatars <span aria-hidden="true">↓</span></a><a href="#goswamis" class="inline-flex items-center gap-2 rounded-full border border-amber-300 bg-white/80 px-6 py-3 text-sm font-semibold text-amber-900 transition hover:bg-amber-50">Meet the Six Goswamis</a></div>
     </div>
   </header>
 
@@ -116,13 +116,72 @@
       </div>
       <p id="empty-state" class="hidden rounded-2xl border border-dashed border-stone-300 bg-white/60 px-6 py-12 text-center text-stone-600">No avatars match that search. Try a name or yuga such as “Rama” or “Treta”.</p>
     </section>
+    <section id="goswamis" aria-labelledby="goswami-title" class="mt-24 scroll-mt-8 border-t border-amber-200/80 pt-16">
+      <div class="mx-auto max-w-3xl text-center">
+        <p class="text-xs font-bold uppercase tracking-[.24em] text-amber-700">Teachers · theologians · servants of Vṛndāvana</p>
+        <h2 id="goswami-title" class="mt-3 font-serif text-3xl text-stone-900 sm:text-4xl">The Six Goswamis of Vrindavana</h2>
+        <p class="mt-4 text-base leading-7 text-stone-600">In the sixteenth century, Śrī Caitanya Mahāprabhu entrusted these six teachers with establishing His teachings through scripture, worship, and life in Vṛndāvana. Together, they helped shape the literature, practices, and theological language of Gauḍīya Vaiṣṇavism.</p>
+      </div>
+      <div class="mx-auto mt-8 max-w-xl">
+        <label for="goswami-search" class="mb-2 block text-sm font-semibold text-stone-700">Find a Goswami</label>
+        <div class="relative"><svg aria-hidden="true" class="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-stone-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg><input id="goswami-search" type="search" placeholder="Search by name, work, or contribution…" autocomplete="off" class="w-full rounded-2xl border border-stone-200 bg-white px-12 py-3.5 text-stone-800 shadow-sm placeholder:text-stone-400 focus:border-amber-500 focus:outline-none focus:ring-4 focus:ring-amber-100"></div>
+        <p id="goswami-count" class="mt-2 min-h-5 text-sm text-stone-500" aria-live="polite">Showing all 6 Goswamis</p>
+      </div>
+      <div id="goswami-grid" class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3" aria-label="The Six Goswamis of Vrindavana">
+        <article class="card rounded-2xl border border-amber-300 bg-white p-5 shadow-sm ring-1 ring-amber-100" data-search="Rupa Rup Goswami Rupa Gosvami Dabir Khas Bhakti-rasamrita-sindhu Ujjvala-nilamani bhakti rasa devotional service" data-open="false">
+          <div class="flex items-start justify-between gap-3"><span class="rounded-full bg-amber-100 px-3 py-1 text-xs font-bold uppercase tracking-wider text-amber-900">01 · Bhakti-rasa ācārya</span><span class="text-2xl text-amber-700" aria-hidden="true">✿</span></div>
+          <h3 class="mt-4 font-serif text-2xl">Śrīla Rūpa Gosvāmī</h3>
+          <p class="mt-2 text-sm leading-6 text-stone-600"><strong class="text-stone-800">Identity &amp; background.</strong> Formerly known as Dabir Khās, Rūpa served in the Bengal administration with his elder brother Sanātana. After meeting Caitanya Mahāprabhu, he renounced government service and was instructed to write on bhakti and revive Vṛndāvana’s sacred places.</p>
+          <div class="card-detail"><div class="mt-4 space-y-3 border-t border-amber-100 pt-4 text-sm leading-6 text-stone-600"><p><strong class="text-stone-800">Major works:</strong> <em>Bhakti-rasāmṛta-sindhu</em>, <em>Ujjvala-nīlamaṇi</em>, <em>Laghu-bhāgavatāmṛta</em>, and the devotional plays <em>Vidagdha-mādhava</em> and <em>Lalita-mādhava</em>.</p><p><strong class="text-stone-800">Theological contribution:</strong> Rūpa gives a systematic account of sādhana-bhakti, the stages of devotion, and bhakti-rasa—the loving relationships devotees cultivate with Krishna. Gauḍīya teachers often call following his devotional conclusions “rūpānuga.”</p><p><strong class="text-stone-800">Vṛndāvana service:</strong> He helped establish worship of Govindadeva and wrote works that made the devotional vision of Vraja accessible to later generations.</p></div></div>
+          <button class="card-toggle mt-4 inline-flex items-center gap-2 text-sm font-semibold text-amber-800 hover:text-amber-950" aria-expanded="false">Read full profile <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 11.168l3.71-3.94a.75.75 0 1 1 1.09 1.03l-4.25 4.51a.75.75 0 0 1-1.09 0l-4.25-4.51a.75.75 0 0 1 .02-1.06Z" clip-rule="evenodd"/></svg></button>
+        </article>
+        <article class="card rounded-2xl border border-stone-200/80 bg-white p-5 shadow-sm" data-search="Sanatana Sanātana Goswami Sakara Mallik elder brother Hari-bhakti-vilasa Brihad Bhagavatamrita Vaishnava conduct theology pilgrimage Madana Mohana" data-open="false">
+          <div class="flex items-start justify-between gap-3"><span class="rounded-full bg-amber-50 px-3 py-1 text-xs font-bold uppercase tracking-wider text-amber-800">02 · Guide to Vaiṣṇava practice</span><span class="text-2xl" aria-hidden="true">⌘</span></div>
+          <h3 class="mt-4 font-serif text-2xl">Śrīla Sanātana Gosvāmī</h3>
+          <p class="mt-2 text-sm leading-6 text-stone-600"><strong class="text-stone-800">Identity &amp; background.</strong> Formerly Sākara Mallik, Sanātana was the elder brother of Rūpa and a senior minister in Bengal. Following his meeting with Caitanya Mahāprabhu, he left public office and became one of the principal teachers sent to Vṛndāvana.</p>
+          <div class="card-detail"><div class="mt-4 space-y-3 border-t border-amber-100 pt-4 text-sm leading-6 text-stone-600"><p><strong class="text-stone-800">Major works:</strong> <em>Bṛhad-bhāgavatāmṛta</em>, <em>Hari-bhakti-vilāsa</em> (compiled with Gopāla Bhaṭṭa), <em>Daśama-ṭippaṇī</em> commentary on the Tenth Canto, and <em>Daśama-carita</em>.</p><p><strong class="text-stone-800">Theological contribution:</strong> His writings explain the nature of the devotee, the Lord, and devotional practice. <em>Hari-bhakti-vilāsa</em> became a foundational guide to Vaiṣṇava conduct, observances, and worship.</p><p><strong class="text-stone-800">Vṛndāvana service:</strong> He helped identify and restore sacred places associated with Krishna’s pastimes and established worship of Madana-mohana. Tradition remembers him as a compassionate guide for pilgrims and residents.</p></div></div>
+          <button class="card-toggle mt-4 inline-flex items-center gap-2 text-sm font-semibold text-amber-800 hover:text-amber-950" aria-expanded="false">Read full profile <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 11.168l3.71-3.94a.75.75 0 1 1 1.09 1.03l-4.25 4.51a.75.75 0 0 1-1.09 0l-4.25-4.51a.75.75 0 0 1 .02-1.06Z" clip-rule="evenodd"/></svg></button>
+        </article>
+        <article class="card rounded-2xl border border-stone-200/80 bg-white p-5 shadow-sm" data-search="Jiva Jīva Goswami nephew Sat-sandarbha six sandarbhas Gopala Champu Bhagavata philosophy ontology epistemology" data-open="false">
+          <div class="flex items-start justify-between gap-3"><span class="rounded-full bg-amber-50 px-3 py-1 text-xs font-bold uppercase tracking-wider text-amber-800">03 · Systematic theologian</span><span class="text-2xl" aria-hidden="true">✧</span></div>
+          <h3 class="mt-4 font-serif text-2xl">Śrīla Jīva Gosvāmī</h3>
+          <p class="mt-2 text-sm leading-6 text-stone-600"><strong class="text-stone-800">Identity &amp; background.</strong> A gifted scholar and nephew of Rūpa and Sanātana, Jīva joined his uncles in Vṛndāvana and became a leading teacher in their circle. He studied Sanskrit learning and devoted his scholarship to explaining the Bhāgavata Purāṇa and Caitanya’s devotional teachings.</p>
+          <div class="card-detail"><div class="mt-4 space-y-3 border-t border-amber-100 pt-4 text-sm leading-6 text-stone-600"><p><strong class="text-stone-800">Major works:</strong> The six <em>Ṣaṭ-sandarbhas</em>—<em>Tattva</em>, <em>Bhagavat</em>, <em>Paramātma</em>, <em>Kṛṣṇa</em>, <em>Bhakti</em>, and <em>Prīti-sandarbha</em>—along with <em>Gopāla-campū</em> and the <em>Krama-sandarbha</em>.</p><p><strong class="text-stone-800">Theological contribution:</strong> The <em>Sandarbhas</em> form a rigorous presentation of Gauḍīya Vedānta grounded in the Bhāgavata Purāṇa. They articulate sambandha (our relationship with the divine), abhidheya (the practice of devotion), and prayojana (love of God as devotion’s goal), while establishing Krishna as the fullest manifestation of Bhagavān.</p><p><strong class="text-stone-800">Legacy:</strong> Jīva helped preserve and teach the Goswamis’ writings, guiding later generations of Vaiṣṇava scholars.</p></div></div>
+          <button class="card-toggle mt-4 inline-flex items-center gap-2 text-sm font-semibold text-amber-800 hover:text-amber-950" aria-expanded="false">Read full profile <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 11.168a.75.75 0 1 1 1.09 1.03l-4.25 4.51a.75.75 0 0 1-1.09 0l-4.25-4.51a.75.75 0 0 1 .02-1.06Z" clip-rule="evenodd"/></svg></button>
+        </article>
+        <article class="card rounded-2xl border border-stone-200/80 bg-white p-5 shadow-sm" data-search="Gopala Bhatta Gopāla Bhaṭṭa Goswami South India Srirangam Hari-bhakti-vilasa deity worship Radha Raman" data-open="false">
+          <div class="flex items-start justify-between gap-3"><span class="rounded-full bg-amber-50 px-3 py-1 text-xs font-bold uppercase tracking-wider text-amber-800">04 · Worship &amp; sacred practice</span><span class="text-2xl" aria-hidden="true">❋</span></div>
+          <h3 class="mt-4 font-serif text-2xl">Śrīla Gopāla Bhaṭṭa Gosvāmī</h3>
+          <p class="mt-2 text-sm leading-6 text-stone-600"><strong class="text-stone-800">Identity &amp; background.</strong> Born into a learned Vaiṣṇava family in Śrīraṅgam, South India, Gopāla Bhaṭṭa met Caitanya Mahāprabhu during the Lord’s southern travels. After his parents’ passing, he journeyed to Vṛndāvana and joined Rūpa and Sanātana.</p>
+          <div class="card-detail"><div class="mt-4 space-y-3 border-t border-amber-100 pt-4 text-sm leading-6 text-stone-600"><p><strong class="text-stone-800">Major works:</strong> He is traditionally associated with the compilation of <em>Hari-bhakti-vilāsa</em> with Sanātana Gosvāmī, drawing together scriptural guidance for Vaiṣṇava worship and observance. <em>Sat-kriyā-sāra-dīpikā</em> is also attributed to him.</p><p><strong class="text-stone-800">Theological contribution:</strong> His service helped give the emerging community a clear, scripturally grounded framework for daily worship, sacred rites, festivals, and Vaiṣṇava practice.</p><p><strong class="text-stone-800">Deity worship:</strong> The Śrī Rādhā-ramaṇa tradition in Vṛndāvana is closely connected with Gopāla Bhaṭṭa and remains a living center of Gauḍīya worship.</p></div></div>
+          <button class="card-toggle mt-4 inline-flex items-center gap-2 text-sm font-semibold text-amber-800 hover:text-amber-950" aria-expanded="false">Read full profile <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 11.168l3.71-3.94a.75.75 0 1 1 1.09 1.03l-4.25 4.51a.75.75 0 0 1-1.09 0l-4.25-4.51a.75.75 0 0 1 .02-1.06Z" clip-rule="evenodd"/></svg></button>
+        </article>
+        <article class="card rounded-2xl border border-stone-200/80 bg-white p-5 shadow-sm" data-search="Raghunatha Bhatta Raghunātha Bhaṭṭa Tapana Mishra Varanasi Bhagavatam recitation kirtan hearing" data-open="false">
+          <div class="flex items-start justify-between gap-3"><span class="rounded-full bg-amber-50 px-3 py-1 text-xs font-bold uppercase tracking-wider text-amber-800">05 · Voice of the Bhāgavatam</span><span class="text-2xl" aria-hidden="true">♫</span></div>
+          <h3 class="mt-4 font-serif text-2xl">Śrīla Raghunātha Bhaṭṭa Gosvāmī</h3>
+          <p class="mt-2 text-sm leading-6 text-stone-600"><strong class="text-stone-800">Identity &amp; background.</strong> The son of Tapana Miśra, Raghunātha Bhaṭṭa grew up in a family devoted to Caitanya Mahāprabhu. He spent time serving the Lord in Jagannātha Purī, then followed the instruction to join Rūpa Gosvāmī in Vṛndāvana.</p>
+          <div class="card-detail"><div class="mt-4 space-y-3 border-t border-amber-100 pt-4 text-sm leading-6 text-stone-600"><p><strong class="text-stone-800">Major works:</strong> Unlike some of his companions, he is not chiefly remembered for a surviving body of books. His signature offering was the eloquent, melodious recitation of <em>Śrīmad-Bhāgavatam</em>.</p><p><strong class="text-stone-800">Theological contribution:</strong> Through careful hearing and recitation, he made the Bhāgavata’s Krishna-centered theology a shared devotional experience. His example foregrounds śravaṇam—attentive hearing—as a central limb of bhakti.</p><p><strong class="text-stone-800">Vṛndāvana service:</strong> His disciples supported the worship of Govindadeva, including the building of the Govinda temple and service to the Deity.</p></div></div>
+          <button class="card-toggle mt-4 inline-flex items-center gap-2 text-sm font-semibold text-amber-800 hover:text-amber-950" aria-expanded="false">Read full profile <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 11.168a.75.75 0 1 1 1.09 1.03l-4.25 4.51a.75.75 0 0 1-1.09 0l-4.25-4.51a.75.75 0 0 1 .02-1.06Z" clip-rule="evenodd"/></svg></button>
+        </article>
+        <article class="card rounded-2xl border border-stone-200/80 bg-white p-5 shadow-sm" data-search="Raghunatha Dasa Raghunātha dāsa Svarupa Damodara Puri renunciation Govardhana Radha-kunda Manah-shiksha Vilapa-kusumanjali" data-open="false">
+          <div class="flex items-start justify-between gap-3"><span class="rounded-full bg-amber-50 px-3 py-1 text-xs font-bold uppercase tracking-wider text-amber-800">06 · Renunciation &amp; intimate devotion</span><span class="text-2xl" aria-hidden="true">❧</span></div>
+          <h3 class="mt-4 font-serif text-2xl">Śrīla Raghunātha dāsa Gosvāmī</h3>
+          <p class="mt-2 text-sm leading-6 text-stone-600"><strong class="text-stone-800">Identity &amp; background.</strong> Born into a prosperous family in Bengal, Raghunātha dāsa longed to join Caitanya Mahāprabhu. After receiving Nityānanda Prabhu’s blessing at Pānihāṭi, he reached Jagannātha Purī, where he served under Svarūpa Dāmodara before settling in Vṛndāvana.</p>
+          <div class="card-detail"><div class="mt-4 space-y-3 border-t border-amber-100 pt-4 text-sm leading-6 text-stone-600"><p><strong class="text-stone-800">Major works:</strong> <em>Vilāpa-kusumāñjali</em>, <em>Manaḥ-śikṣā</em>, <em>Muktā-carita</em>, and prayers preserved in <em>Stavāvalī</em>. His recollections of Caitanya Mahāprabhu’s later years also informed the tradition’s sacred biographies.</p><p><strong class="text-stone-800">Theological contribution:</strong> His prayers express the intimate, humble aspiration for service to Rādhā and Krishna in Vraja. He is especially honored as an exemplar of deep longing, remembrance, and renunciation in devotional life.</p><p><strong class="text-stone-800">Sacred geography:</strong> He lived in austerity near Rādhā-kuṇḍa, helping establish its place as a cherished site of Gauḍīya pilgrimage and contemplation.</p></div></div>
+          <button class="card-toggle mt-4 inline-flex items-center gap-2 text-sm font-semibold text-amber-800 hover:text-amber-950" aria-expanded="false">Read full profile <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 11.168a.75.75 0 1 1 1.09 1.03l-4.25 4.51a.75.75 0 0 1-1.09 0l-4.25-4.51a.75.75 0 0 1 .02-1.06Z" clip-rule="evenodd"/></svg></button>
+        </article>
+      </div>
+      <p id="goswami-empty" class="hidden rounded-2xl border border-dashed border-stone-300 bg-white/60 px-6 py-12 text-center text-stone-600">No profiles match that search. Try a name or work such as “Jīva” or “Bhakti-rasāmṛta-sindhu”.</p>
+      <p class="mx-auto mt-6 max-w-3xl text-center text-xs leading-5 text-stone-500">Names are given in transliteration; biographical details are presented according to the Gauḍīya Vaiṣṇava tradition. Attribution of some works varies among traditional sources.</p>
+      <div class="mx-auto mt-5 max-w-3xl text-center text-xs leading-6 text-stone-500">Further reading: <a class="font-medium text-amber-800 underline decoration-amber-300 underline-offset-2 hover:text-amber-950" href="https://vedabase.io/en/library/cc/madhya/23/104/" target="_blank" rel="noreferrer">Caitanya-caritāmṛta, Madhya 23.104</a> · <a class="font-medium text-amber-800 underline decoration-amber-300 underline-offset-2 hover:text-amber-950" href="https://vedabase.io/en/library/cc/madhya/1/" target="_blank" rel="noreferrer">Madhya 1, Goswami works</a> · <a class="font-medium text-amber-800 underline decoration-amber-300 underline-offset-2 hover:text-amber-950" href="https://vedabase.io/en/library/cc/adi/10/158/" target="_blank" rel="noreferrer">Ādi 10.158, Raghunātha Bhaṭṭa</a> · <a class="font-medium text-amber-800 underline decoration-amber-300 underline-offset-2 hover:text-amber-950" href="https://vedabase.io/en/library/cc/adi/10/91/" target="_blank" rel="noreferrer">Ādi 10.91, Raghunātha dāsa</a></div>
+    </section>
     <aside class="mx-auto mt-12 max-w-3xl rounded-2xl border border-amber-200 bg-amber-50/70 px-5 py-5 text-center text-sm leading-6 text-stone-600 sm:px-8"><span class="font-semibold text-stone-800">A note on tradition:</span> Accounts and avatar lists vary across Vaishnava texts and traditions. This guide presents the familiar ten-avatar list with the Krishna-centered understanding taught in the ISKCON tradition.</aside>
   </main>
 
   <footer class="border-t border-amber-200/70 bg-[#f6efe2] px-5 py-8 text-center">
     <p class="font-serif text-lg text-stone-800">May the stories of the Lord inspire devotion and compassion.</p>
     <p class="mt-2 text-xs font-semibold uppercase tracking-[.2em] text-amber-800">Hare Krishna</p>
-    <p class="mt-4 text-xs text-stone-500">A respectful introduction to the Dashavatara</p>
+    <p class="mt-4 text-xs text-stone-500">A respectful introduction to the Dashavatara and the Six Goswamis of Vrindavana</p>
   </footer>
   <script>
     const search = document.getElementById('avatar-search');
@@ -146,8 +205,23 @@
         const open = card.dataset.open !== 'true';
         card.dataset.open = String(open);
         button.setAttribute('aria-expanded', String(open));
-        button.firstChild.textContent = open ? 'Read less ' : 'Read more ';
+        button.firstChild.textContent = open ? 'Close profile ' : (card.closest('#goswami-grid') ? 'Read full profile ' : 'Read more ');
       });
+    });
+    const goswamiSearch = document.getElementById('goswami-search');
+    const goswamiCards = [...document.querySelectorAll('#goswami-grid .card')];
+    const goswamiCount = document.getElementById('goswami-count');
+    const goswamiEmpty = document.getElementById('goswami-empty');
+    goswamiSearch.addEventListener('input', () => {
+      const query = goswamiSearch.value.trim().toLocaleLowerCase();
+      let visible = 0;
+      goswamiCards.forEach(card => {
+        const matches = `${card.querySelector('h3').textContent} ${card.dataset.search}`.toLocaleLowerCase().includes(query);
+        card.hidden = !matches;
+        if (matches) visible++;
+      });
+      goswamiCount.textContent = query ? `Showing ${visible} of ${goswamiCards.length} Goswamis` : `Showing all ${goswamiCards.length} Goswamis`;
+      goswamiEmpty.classList.toggle('hidden', visible !== 0);
     });
   </script>
 </body>
