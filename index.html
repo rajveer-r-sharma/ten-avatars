@@ -26,6 +26,8 @@
     .card[data-open="true"] .card-detail { grid-template-rows:1fr; }
     .card[data-open="true"] .card-toggle svg { transform:rotate(180deg); }
     .card-toggle svg { transition:transform .2s ease; }
+    .life-timeline li { position:relative; }
+    .life-timeline li::before { content:"";position:absolute;left:-1.82rem;top:.48rem;width:.75rem;height:.75rem;border:2px solid white;border-radius:50%;background:#d97706;box-shadow:0 0 0 2px #fde68a; }
     :focus-visible { outline:3px solid #d97706; outline-offset:3px; }
     @media (prefers-reduced-motion: reduce) { *,*::before,*::after { scroll-behavior:auto!important;transition:none!important; } }
   </style>
@@ -40,11 +42,99 @@
       <p class="mt-9 text-xs font-bold uppercase tracking-[.28em] text-amber-700 sm:text-sm">A devotional learning resource</p>
       <h1 class="mx-auto mt-4 max-w-4xl font-serif text-4xl leading-tight text-stone-900 sm:text-6xl lg:text-7xl">Learner's Guide<br><span class="text-amber-700">to ISKCON</span></h1>
       <p class="mx-auto mt-6 max-w-2xl text-base leading-7 text-stone-600 sm:text-lg sm:leading-8">Explore the Krishna-centered teachings of the International Society for Krishna Consciousness through the Dashavatara, the Six Goswamis of Vrindavana, and the practices of devotional service.</p>
-      <div class="mt-8 flex flex-wrap justify-center gap-3"><a href="#avatars" class="inline-flex items-center gap-2 rounded-full bg-stone-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-amber-800">Explore the avatars <span aria-hidden="true">↓</span></a><a href="#goswamis" class="inline-flex items-center gap-2 rounded-full border border-amber-300 bg-white/80 px-6 py-3 text-sm font-semibold text-amber-900 transition hover:bg-amber-50">Meet the Six Goswamis</a><a href="#bhakti" class="inline-flex items-center gap-2 rounded-full border border-amber-300 bg-white/80 px-6 py-3 text-sm font-semibold text-amber-900 transition hover:bg-amber-50">Learn the nine practices</a><a href="#principles" class="inline-flex items-center gap-2 rounded-full border border-amber-300 bg-white/80 px-6 py-3 text-sm font-semibold text-amber-900 transition hover:bg-amber-50">Four principles</a></div>
+      <div class="mt-8 flex flex-wrap justify-center gap-3"><a href="#prabhupada" class="inline-flex items-center gap-2 rounded-full bg-stone-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-amber-800">Learn about the Founder <span aria-hidden="true">↓</span></a><a href="#avatars" class="inline-flex items-center gap-2 rounded-full border border-amber-300 bg-white/80 px-6 py-3 text-sm font-semibold text-amber-900 transition hover:bg-amber-50">Explore the avatars</a><a href="#goswamis" class="inline-flex items-center gap-2 rounded-full border border-amber-300 bg-white/80 px-6 py-3 text-sm font-semibold text-amber-900 transition hover:bg-amber-50">Meet the Six Goswamis</a><a href="#bhakti" class="inline-flex items-center gap-2 rounded-full border border-amber-300 bg-white/80 px-6 py-3 text-sm font-semibold text-amber-900 transition hover:bg-amber-50">Learn the nine practices</a><a href="#principles" class="inline-flex items-center gap-2 rounded-full border border-amber-300 bg-white/80 px-6 py-3 text-sm font-semibold text-amber-900 transition hover:bg-amber-50">Four principles</a></div>
     </div>
   </header>
 
   <main id="main" class="mx-auto max-w-6xl px-5 pb-20 sm:px-8">
+    <section id="prabhupada" aria-labelledby="prabhupada-title" class="scroll-mt-8 py-14 sm:py-20">
+      <div class="mx-auto max-w-4xl text-center">
+        <p class="text-xs font-bold uppercase tracking-[.24em] text-amber-700">Founder-Ācārya of ISKCON · 1896–1977</p>
+        <h2 id="prabhupada-title" class="mt-3 font-serif text-3xl leading-tight text-stone-900 sm:text-5xl">His Divine Grace<br class="sm:hidden"> A. C. Bhaktivedanta Swami Prabhupāda</h2>
+        <p class="mx-auto mt-5 max-w-3xl text-base leading-7 text-stone-600 sm:text-lg sm:leading-8">Śrīla Prabhupāda carried the teachings of Krishna-bhakti from India to an international audience, founding the International Society for Krishna Consciousness in New York in 1966. ISKCON honors him as its Founder-Ācārya: the founding spiritual teacher whose books, instructions, and example continue to guide the society.</p>
+      </div>
+
+      <div class="mx-auto mt-8 grid max-w-5xl grid-cols-2 gap-3 sm:grid-cols-4">
+        <div class="rounded-2xl border border-amber-200 bg-white p-4 text-center shadow-sm"><p class="font-serif text-2xl text-amber-800">1896</p><p class="mt-1 text-xs font-semibold uppercase tracking-wider text-stone-500">Born in Calcutta</p></div>
+        <div class="rounded-2xl border border-amber-200 bg-white p-4 text-center shadow-sm"><p class="font-serif text-2xl text-amber-800">1922</p><p class="mt-1 text-xs font-semibold uppercase tracking-wider text-stone-500">Met his spiritual master</p></div>
+        <div class="rounded-2xl border border-amber-200 bg-white p-4 text-center shadow-sm"><p class="font-serif text-2xl text-amber-800">1965</p><p class="mt-1 text-xs font-semibold uppercase tracking-wider text-stone-500">Voyage to the West</p></div>
+        <div class="rounded-2xl border border-amber-200 bg-white p-4 text-center shadow-sm"><p class="font-serif text-2xl text-amber-800">1966</p><p class="mt-1 text-xs font-semibold uppercase tracking-wider text-stone-500">ISKCON founded</p></div>
+      </div>
+
+      <div class="mt-8 grid gap-4 md:grid-cols-2">
+        <article class="rounded-2xl border border-stone-200/80 bg-white p-5 shadow-sm sm:p-7">
+          <p class="text-xs font-bold uppercase tracking-[.2em] text-amber-700">Early life &amp; spiritual formation</p>
+          <h3 class="mt-2 font-serif text-2xl text-stone-900">Abhay Charan De</h3>
+          <div class="mt-4 space-y-3 text-sm leading-7 text-stone-600">
+            <p>Born Abhay Charan De on September 1, 1896, in Calcutta (now Kolkata), he grew up in a Vaiṣṇava family. His father, Gour Mohan De, encouraged his devotion to Krishna and supported his early interest in worship and kīrtana.</p>
+            <p>In 1922, Abhay met the Gauḍīya Vaiṣṇava teacher Śrīla Bhaktisiddhānta Sarasvatī Ṭhākura. Bhaktisiddhānta urged him to present Lord Caitanya’s teachings in English and to help spread Krishna consciousness beyond India. This instruction shaped the direction of his life and later inspired his sustained work in writing and publishing.</p>
+            <p>Abhay accepted formal initiation from Bhaktisiddhānta in 1933. While maintaining family and business responsibilities, he studied and wrote about Gauḍīya Vaiṣṇava philosophy. He began publishing <em>Back to Godhead</em> in 1944, writing, editing, printing, and distributing the magazine himself.</p>
+            <p>He entered the renounced order of sannyāsa in 1959 and focused increasingly on translating and commenting on Sanskrit Vaiṣṇava texts. In Vṛndāvana, he worked on the first volumes of his English <em>Śrīmad-Bhāgavatam</em>, combining translation with detailed explanations for contemporary readers.</p>
+          </div>
+        </article>
+        <article class="rounded-2xl border border-stone-200/80 bg-white p-5 shadow-sm sm:p-7">
+          <p class="text-xs font-bold uppercase tracking-[.2em] text-amber-700">A mission across the ocean</p>
+          <h3 class="mt-2 font-serif text-2xl text-stone-900">Jaladūta &amp; the first temple</h3>
+          <div class="mt-4 space-y-3 text-sm leading-7 text-stone-600">
+            <p>In August 1965, at age sixty-nine, Śrīla Prabhupāda sailed from Calcutta to the United States aboard the cargo ship <em>Jaladūta</em>. He arrived in New York on September 17 with a small amount of money, his translations, and a determination to fulfill his spiritual master’s request. The difficult voyage included two heart attacks, but he continued his mission after reaching America.</p>
+            <p>He initially lived simply in New York, speaking wherever people would listen and teaching from the <em>Bhagavad-gītā</em> and <em>Śrīmad-Bhāgavatam</em>. His early classes and kīrtanas gathered a small circle of students. With their help, he established a storefront temple at 26 Second Avenue on Manhattan’s Lower East Side.</p>
+            <p>On July 11, 1966, he incorporated the International Society for Krishna Consciousness. The society’s seven purposes called for sharing spiritual knowledge, teaching Krishna consciousness, congregational chanting, creating places of worship and community, promoting a simpler way of life, and publishing devotional literature.</p>
+            <p>What began with one teacher and a storefront grew into a network of temples, farms, schools, publishing, and food distribution. Prabhupāda traveled, taught, corresponded, met with public figures and scholars, and trained students to carry the mission forward.</p>
+          </div>
+        </article>
+        <article class="rounded-2xl border border-stone-200/80 bg-white p-5 shadow-sm sm:p-7">
+          <p class="text-xs font-bold uppercase tracking-[.2em] text-amber-700">The heart of the teaching</p>
+          <h3 class="mt-2 font-serif text-2xl text-stone-900">Krishna-bhakti for everyone</h3>
+          <div class="mt-4 space-y-3 text-sm leading-7 text-stone-600">
+            <p>Śrīla Prabhupāda presented Gauḍīya Vaiṣṇava teachings as a practical path of bhakti-yoga. The soul is understood as an eternal person related to Krishna, and life’s highest purpose is to awaken loving service to Him.</p>
+            <p>He emphasized chanting the Hare Krishna mahā-mantra—especially congregational saṅkīrtana—alongside hearing scripture, worship, service, and association with devotees. These practices, he taught, purify consciousness and help a person develop a direct relationship with Krishna.</p>
+            <p>His teaching centers on the <em>Bhagavad-gītā</em>, <em>Śrīmad-Bhāgavatam</em>, the works of the Six Goswamis, and the life and teachings of Caitanya Mahāprabhu. He presented these texts within the disciplic succession of Gauḍīya Vaiṣṇavism and stressed both philosophical study and lived devotional practice.</p>
+            <p>He taught that bhakti is open to people from every background. Women and men in many countries became students, practitioners, and teachers. The public practice of kīrtana, temple worship, prasādam, and book distribution made devotional culture visible in daily community life.</p>
+          </div>
+        </article>
+        <article class="rounded-2xl border border-stone-200/80 bg-white p-5 shadow-sm sm:p-7">
+          <p class="text-xs font-bold uppercase tracking-[.2em] text-amber-700">Books &amp; publishing</p>
+          <h3 class="mt-2 font-serif text-2xl text-stone-900">A library for generations</h3>
+          <div class="mt-4 space-y-3 text-sm leading-7 text-stone-600">
+            <p>Śrīla Prabhupāda regarded book publication as central to his mission. He translated and commented on more than eighty volumes of Vaiṣṇava scripture and devotional teaching, working intensively through the night and dictating translations and purports. His books are now published in many languages and used by readers, practitioners, and students around the world.</p>
+            <ul class="list-inside list-disc space-y-1 pl-1 marker:text-amber-600">
+              <li><em>Bhagavad-gītā As It Is</em> — Krishna’s dialogue with Arjuna, with translation and commentary.</li>
+              <li><em>Śrīmad-Bhāgavatam</em> — a multi-volume translation and commentary on the Bhāgavata Purāṇa.</li>
+              <li><em>Śrī Caitanya-caritāmṛta</em> — the life and teachings of Caitanya Mahāprabhu.</li>
+              <li><em>The Nectar of Devotion</em> — a study of Rūpa Gosvāmī’s <em>Bhakti-rasāmṛta-sindhu</em>.</li>
+              <li><em>The Nectar of Instruction</em>, <em>Īśopaniṣad</em>, and <em>Science of Self-Realization</em>.</li>
+            </ul>
+            <p>He established the Bhaktivedanta Book Trust to publish his works and direct publishing proceeds toward further book production and temples. His writings became a lasting vehicle for sharing the philosophical foundations of Krishna consciousness.</p>
+          </div>
+        </article>
+      </div>
+
+      <article class="mt-5 rounded-2xl border border-amber-200 bg-white p-5 shadow-sm sm:p-7">
+        <div class="grid gap-6 lg:grid-cols-[.72fr_1.28fr] lg:items-start">
+          <div><p class="text-xs font-bold uppercase tracking-[.2em] text-amber-700">A life of service</p><h3 class="mt-2 font-serif text-2xl text-stone-900">Selected milestones</h3><p class="mt-3 text-sm leading-6 text-stone-600">This timeline follows the major steps from his early instruction to an international devotional movement.</p></div>
+          <ol class="life-timeline relative space-y-4 border-l border-amber-200 pl-5 text-sm leading-6 text-stone-600">
+            <li><strong class="text-stone-800">1896 ·</strong> Abhay Charan De is born in Calcutta, in a family devoted to Krishna.</li>
+            <li><strong class="text-stone-800">1922 ·</strong> Meets Bhaktisiddhānta Sarasvatī, who asks him to share Caitanya Mahāprabhu’s teachings in English.</li>
+            <li><strong class="text-stone-800">1933 ·</strong> Receives initiation from Bhaktisiddhānta Sarasvatī.</li>
+            <li><strong class="text-stone-800">1944 ·</strong> Begins <em>Back to Godhead</em>, a magazine for presenting Krishna consciousness in English.</li>
+            <li><strong class="text-stone-800">1959 ·</strong> Accepts sannyāsa and intensifies his writing and translation work.</li>
+            <li><strong class="text-stone-800">1965 ·</strong> Sails to the United States aboard the <em>Jaladūta</em> at age sixty-nine.</li>
+            <li><strong class="text-stone-800">1966 ·</strong> Establishes ISKCON in New York and begins initiating students.</li>
+            <li><strong class="text-stone-800">1965–77 ·</strong> Travels repeatedly across continents, opening and strengthening centers and translating and publishing books.</li>
+            <li><strong class="text-stone-800">1970–72 ·</strong> Establishes the Governing Body Commission for management and the Bhaktivedanta Book Trust for publishing.</li>
+            <li><strong class="text-stone-800">1977 ·</strong> Departs from this world in Vṛndāvana on November 14, leaving a growing society and an extensive body of teachings.</li>
+          </ol>
+        </div>
+      </article>
+
+      <div class="mt-5 grid gap-4 sm:grid-cols-2">
+        <article class="rounded-2xl border border-stone-200/80 bg-white p-5 shadow-sm sm:p-6"><p class="text-xs font-bold uppercase tracking-[.2em] text-amber-700">Building a lasting institution</p><h3 class="mt-2 font-serif text-xl text-stone-900">Temples, communities &amp; service</h3><p class="mt-3 text-sm leading-7 text-stone-600">Under Śrīla Prabhupāda’s guidance, ISKCON expanded from the New York storefront to centers in cities across the world. Devotees established temples and āśramas, rural communities, schools, restaurants serving prasādam, and food-relief programs. In India, he helped establish major centers in Māyāpur, Vṛndāvana, and Mumbai, connecting the growing international community with the tradition’s sacred places.</p></article>
+        <article class="rounded-2xl border border-stone-200/80 bg-white p-5 shadow-sm sm:p-6"><p class="text-xs font-bold uppercase tracking-[.2em] text-amber-700">Founder-Ācārya</p><h3 class="mt-2 font-serif text-xl text-stone-900">A continuing relationship with ISKCON</h3><p class="mt-3 text-sm leading-7 text-stone-600">“Founder-Ācārya” expresses both his role in establishing ISKCON and his continuing place as its principal spiritual teacher. He set up the Governing Body Commission (GBC) in 1970 to oversee the society’s administration, and his will provided for ISKCON’s continuation under the GBC after his departure. ISKCON members study his books and instructions as the foundation of the society’s teaching and practice.</p></article>
+      </div>
+      <p class="mx-auto mt-6 max-w-4xl text-center text-xs leading-5 text-stone-500">This profile summarizes Śrīla Prabhupāda’s life and mission as understood within ISKCON. For fuller biographies and primary works, consult the sources below.</p>
+      <div class="mx-auto mt-3 max-w-4xl text-center text-xs leading-6 text-stone-500">Sources &amp; further reading: <a class="font-medium text-amber-800 underline decoration-amber-300 underline-offset-2 hover:text-amber-950" href="https://gbc.iskcon.org/srila-prabhupada/" target="_blank" rel="noreferrer">ISKCON GBC biography</a> · <a class="font-medium text-amber-800 underline decoration-amber-300 underline-offset-2 hover:text-amber-950" href="https://www.bbt.org/founder" target="_blank" rel="noreferrer">Bhaktivedanta Book Trust: Founder</a> · <a class="font-medium text-amber-800 underline decoration-amber-300 underline-offset-2 hover:text-amber-950" href="https://gbc.iskcon.org/what-is-iskcon/" target="_blank" rel="noreferrer">ISKCON’s purposes &amp; history</a> · <a class="font-medium text-amber-800 underline decoration-amber-300 underline-offset-2 hover:text-amber-950" href="https://vedabase.io/en/library/ssr/1/" target="_blank" rel="noreferrer"><em>Science of Self-Realization</em>, chapter 1</a></div>
+    </section>
+
     <section id="avatars" aria-labelledby="section-title" class="scroll-mt-8">
       <div class="mx-auto max-w-2xl text-center">
         <p class="text-xs font-bold uppercase tracking-[.24em] text-amber-700">Ten forms, one divine source</p>
