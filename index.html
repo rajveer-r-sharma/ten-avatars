@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbf7ef">
+  <meta name="description" content="Explore the Dashavatara, the ten celebrated incarnations of Lord Vishnu, through the devotional teachings of Krishna consciousness.">
+  <title>Dashavatara | The 10 Divine Descents</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { saffron: '#FF9933', cream: '#fbf7ef', ink: '#27231f' }, fontFamily: { serif: ['Georgia', 'serif'] } } } };
+  </script>
+  <style>
+    :root { color-scheme: light; --saffron:#FF9933; --cream:#fbf7ef; --ink:#27231f; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin:0; background:var(--cream); color:var(--ink); font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    .hero-wash { background: radial-gradient(ellipse at 50% 5%, rgba(255,153,51,.18), transparent 54%), linear-gradient(180deg,#fffaf1 0%,var(--cream) 100%); }
+    .mandala { position:absolute; width:min(48vw,520px); aspect-ratio:1; border:1px solid rgba(196,112,24,.14); border-radius:50%; left:50%; top:50%; transform:translate(-50%,-50%); pointer-events:none; }
+    .mandala::before,.mandala::after { content:"";position:absolute;inset:9%;border:1px solid rgba(196,112,24,.13);border-radius:50%; }
+    .mandala::after { inset:19%; }
+    .card { transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+    .card:hover,.card:focus-within { transform:translateY(-5px); box-shadow:0 18px 40px rgba(80,53,23,.1); border-color:rgba(255,153,51,.72); }
+    .card-detail { display:grid; grid-template-rows:0fr; transition:grid-template-rows .25s ease; }
+    .card-detail > div { overflow:hidden; }
+    .card[data-open="true"] .card-detail { grid-template-rows:1fr; }
+    .card[data-open="true"] .card-toggle svg { transform:rotate(180deg); }
+    .card-toggle svg { transition:transform .2s ease; }
+    :focus-visible { outline:3px solid #d97706; outline-offset:3px; }
+    @media (prefers-reduced-motion: reduce) { *,*::before,*::after { scroll-behavior:auto!important;transition:none!important; } }
+  </style>
+</head>
+<body>
+  <header class="hero-wash relative isolate overflow-hidden">
+    <div class="mandala" aria-hidden="true"></div>
+    <div class="relative mx-auto max-w-6xl px-5 pb-14 pt-10 text-center sm:px-8 sm:pb-20 sm:pt-14">
+      <a href="#main" class="inline-flex items-center gap-2 rounded-full border border-amber-200 bg-white/70 px-4 py-2 text-xs font-semibold uppercase tracking-[.2em] text-amber-800">
+        <span aria-hidden="true" class="text-saffron">✺</span> A devotional guide
+      </a>
+      <p class="mt-9 text-xs font-bold uppercase tracking-[.28em] text-amber-700 sm:text-sm">Preserver · Protector · Guide</p>
+      <h1 class="mx-auto mt-4 max-w-4xl font-serif text-4xl leading-tight text-stone-900 sm:text-6xl lg:text-7xl">Dashavatara:<br class="sm:hidden"> <span class="text-amber-700">The 10 Divine Descents</span></h1>
+      <p class="mx-auto mt-6 max-w-2xl text-base leading-7 text-stone-600 sm:text-lg sm:leading-8">When righteousness needs protection, the Supreme Lord descends in many forms. In the teachings of Krishna consciousness, these avatars reveal Krishna’s compassion and divine purpose across the ages.</p>
+      <a href="#avatars" class="mt-8 inline-flex items-center gap-2 rounded-full bg-stone-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-amber-800">Explore the avatars <span aria-hidden="true">↓</span></a>
+    </div>
+  </header>
+
+  <main id="main" class="mx-auto max-w-6xl px-5 pb-20 sm:px-8">
+    <section id="avatars" aria-labelledby="section-title" class="scroll-mt-8">
+      <div class="mx-auto max-w-2xl text-center">
+        <p class="text-xs font-bold uppercase tracking-[.24em] text-amber-700">Ten forms, one divine source</p>
+        <h2 id="section-title" class="mt-3 font-serif text-3xl text-stone-900 sm:text-4xl">Meet the Dashavatara</h2>
+        <p class="mt-3 leading-7 text-stone-600">Explore each appearance and the pastime remembered in the sacred tradition.</p>
+      </div>
+
+      <div class="mx-auto mt-8 max-w-xl">
+        <label for="avatar-search" class="mb-2 block text-sm font-semibold text-stone-700">Find an avatar</label>
+        <div class="relative">
+          <svg aria-hidden="true" class="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-stone-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg>
+          <input id="avatar-search" type="search" placeholder="Search by name or yuga…" autocomplete="off" class="w-full rounded-2xl border border-stone-200 bg-white px-12 py-3.5 text-stone-800 shadow-sm placeholder:text-stone-400 focus:border-amber-500 focus:outline-none focus:ring-4 focus:ring-amber-100">
+        </div>
+        <p id="result-count" class="mt-2 min-h-5 text-sm text-stone-500" aria-live="polite">Showing all 10 avatars</p>
+      </div>
+
+      <div id="avatar-grid" class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3" aria-label="The ten avatars of Vishnu">
+        <article class="card rounded-2xl border border-stone-200/80 bg-white p-5 shadow-sm" data-name="Matsya" data-yuga="Satya Yuga" data-open="false">
+          <div class="flex items-start justify-between gap-3"><span class="rounded-full bg-amber-50 px-3 py-1 text-xs font-bold uppercase tracking-wider text-amber-800">01 · Satya Yuga</span><span class="text-2xl" aria-hidden="true">〰</span></div>
+          <h3 class="mt-4 font-serif text-2xl">Matsya</h3><p class="mt-2 text-sm leading-6 text-stone-600">The Lord appears as a great fish to protect life and sacred wisdom from a devastating flood. He guides the boat carrying Satyavrata and the seeds of future creation to safety.</p>
+          <div class="card-detail"><div><p class="mt-3 border-t border-amber-100 pt-3 text-sm leading-6 text-stone-600">Matsya’s pastime reminds devotees that divine guidance carries the sincere through upheaval and preserves the knowledge needed for a new beginning.</p></div></div>
+          <button class="card-toggle mt-4 inline-flex items-center gap-2 text-sm font-semibold text-amber-800 hover:text-amber-950" aria-expanded="false">Read more <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 11.168l3.71-3.94a.75.75 0 1 1 1.09 1.03l-4.25 4.51a.75.75 0 0 1-1.09 0l-4.25-4.51a.75.75 0 0 1 .02-1.06Z" clip-rule="evenodd"/></svg></button>
+        </article>
+        <article class="card rounded-2xl border border-stone-200/80 bg-white p-5 shadow-sm" data-name="Kurma" data-yuga="Satya Yuga" data-open="false">
+          <div class="flex items-start justify-between gap-3"><span class="rounded-full bg-amber-50 px-3 py-1 text-xs font-bold uppercase tracking-wider text-amber-800">02 · Satya Yuga</span><span class="text-2xl" aria-hidden="true">◉</span></div>
+          <h3 class="mt-4 font-serif text-2xl">Kurma</h3><p class="mt-2 text-sm leading-6 text-stone-600">As a giant tortoise, the Lord supports Mount Mandara while devas and asuras churn the ocean of milk. His steady foundation allows the churning to continue and auspicious treasures to emerge.</p>
+          <div class="card-detail"><div><p class="mt-3 border-t border-amber-100 pt-3 text-sm leading-6 text-stone-600">Kurma shows the Lord’s quiet support: the Supreme sustains the work of the universe even when His help is beneath the surface.</p></div></div><button class="card-toggle mt-4 inline-flex items-center gap-2 text-sm font-semibold text-amber-800 hover:text-amber-950" aria-expanded="false">Read more <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 11.168l3.71-3.94a.75.75 0 1 1 1.09 1.03l-4.25 4.51a.75.75 0 0 1-1.09 0l-4.25-4.51a.75.75 0 0 1 .02-1.06Z" clip-rule="evenodd"/></svg></button>
+        </article>
+        <article class="card rounded-2xl border border-stone-200/80 bg-white p-5 shadow-sm" data-name="Varaha" data-yuga="Satya Yuga" data-open="false">
+          <div class="flex items-start justify-between gap-3"><span class="rounded-full bg-amber-50 px-3 py-1 text-xs font-bold uppercase tracking-wider text-amber-800">03 · Satya Yuga</span><span class="text-2xl" aria-hidden="true">◇</span></div>
+          <h3 class="mt-4 font-serif text-2xl">Varaha</h3><p class="mt-2 text-sm leading-6 text-stone-600">The Lord takes the form of a mighty boar and dives into the cosmic waters to rescue the Earth. He lifts Bhūmi-devi on His tusks and defeats the demon Hiranyaksha.</p>
+          <div class="card-detail"><div><p class="mt-3 border-t border-amber-100 pt-3 text-sm leading-6 text-stone-600">The rescue of the Earth expresses the Lord’s personal care for His creation and His victory over forces that threaten its balance.</p></div></div><button class="card-toggle mt-4 inline-flex items-center gap-2 text-sm font-semibold text-amber-800 hover:text-amber-950" aria-expanded="false">Read more <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 11.168l3.71-3.94a.75.75 0 1 1 1.09 1.03l-4.25 4.51a.75.75 0 0 1-1.09 0l-4.25-4.51a.75.75 0 0 1 .02-1.06Z" clip-rule="evenodd"/></svg></button>
+        </article>
+        <article class="card rounded-2xl border border-stone-200/80 bg-white p-5 shadow-sm" data-name="Narasimha" data-yuga="Satya Yuga" data-open="false">
+          <div class="flex items-start justify-between gap-3"><span class="rounded-full bg-amber-50 px-3 py-1 text-xs font-bold uppercase tracking-wider text-amber-800">04 · Satya Yuga</span><span class="text-2xl" aria-hidden="true">✦</span></div>
+          <h3 class="mt-4 font-serif text-2xl">Narasimha</h3><p class="mt-2 text-sm leading-6 text-stone-600">Half-man, half-lion, the Lord appears to protect His devoted child Prahlada from the tyrant Hiranyakashipu. He fulfills the conditions of the demon’s boon in a way no one could foresee.</p>
+          <div class="card-detail"><div><p class="mt-3 border-t border-amber-100 pt-3 text-sm leading-6 text-stone-600">Narasimha’s appearance is celebrated as a powerful assurance that sincere devotion is protected wherever it may be tested.</p></div></div><button class="card-toggle mt-4 inline-flex items-center gap-2 text-sm font-semibold text-amber-800 hover:text-amber-950" aria-expanded="false">Read more <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 11.168l3.71-3.94a.75.75 0 1 1 1.09 1.03l-4.25 4.51a.75.75 0 0 1-1.09 0l-4.25-4.51a.75.75 0 0 1 .02-1.06Z" clip-rule="evenodd"/></svg></button>
+        </article>
+        <article class="card rounded-2xl border border-stone-200/80 bg-white p-5 shadow-sm" data-name="Vamana" data-yuga="Treta Yuga" data-open="false">
+          <div class="flex items-start justify-between gap-3"><span class="rounded-full bg-amber-50 px-3 py-1 text-xs font-bold uppercase tracking-wider text-amber-800">05 · Treta Yuga</span><span class="text-2xl" aria-hidden="true">⌁</span></div>
+          <h3 class="mt-4 font-serif text-2xl">Vamana</h3><p class="mt-2 text-sm leading-6 text-stone-600">The Lord appears as a young brahmana and asks King Bali for three paces of land. He then spans the universe in two steps, and Bali humbly offers his own head for the third.</p>
+          <div class="card-detail"><div><p class="mt-3 border-t border-amber-100 pt-3 text-sm leading-6 text-stone-600">Bali’s surrender makes this pastime a cherished example of generosity, humility, and offering everything to the Lord.</p></div></div><button class="card-toggle mt-4 inline-flex items-center gap-2 text-sm font-semibold text-amber-800 hover:text-amber-950" aria-expanded="false">Read more <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 11.168l3.71-3.94a.75.75 0 1 1 1.09 1.03l-4.25 4.51a.75.75 0 0 1-1.09 0l-4.25-4.51a.75.75 0 0 1 .02-1.06Z" clip-rule="evenodd"/></svg></button>
+        </article>
+        <article class="card rounded-2xl border border-stone-200/80 bg-white p-5 shadow-sm" data-name="Parashurama" data-yuga="Treta Yuga" data-open="false">
+          <div class="flex items-start justify-between gap-3"><span class="rounded-full bg-amber-50 px-3 py-1 text-xs font-bold uppercase tracking-wider text-amber-800">06 · Treta Yuga</span><span class="text-2xl" aria-hidden="true">⌁</span></div>
+          <h3 class="mt-4 font-serif text-2xl">Parashurama</h3><p class="mt-2 text-sm leading-6 text-stone-600">The warrior sage, bearing an axe, confronts rulers who abuse their power and oppress the people. He restores order and later appears in the traditions surrounding Rama.</p>
+          <div class="card-detail"><div><p class="mt-3 border-t border-amber-100 pt-3 text-sm leading-6 text-stone-600">Parashurama’s story calls leaders to responsibility and reminds all people that power is meant to serve dharma.</p></div></div><button class="card-toggle mt-4 inline-flex items-center gap-2 text-sm font-semibold text-amber-800 hover:text-amber-950" aria-expanded="false">Read more <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 11.168l3.71-3.94a.75.75 0 1 1 1.09 1.03l-4.25 4.51a.75.75 0 0 1-1.09 0l-4.25-4.51a.75.75 0 0 1 .02-1.06Z" clip-rule="evenodd"/></svg></button>
+        </article>
+        <article class="card rounded-2xl border border-stone-200/80 bg-white p-5 shadow-sm" data-name="Rama" data-yuga="Treta Yuga" data-open="false">
+          <div class="flex items-start justify-between gap-3"><span class="rounded-full bg-amber-50 px-3 py-1 text-xs font-bold uppercase tracking-wider text-amber-800">07 · Treta Yuga</span><span class="text-2xl" aria-hidden="true">❋</span></div>
+          <h3 class="mt-4 font-serif text-2xl">Rama</h3><p class="mt-2 text-sm leading-6 text-stone-600">Lord Rama, the ideal king, journeys into exile with Sita and Lakshmana and forms a devoted alliance with Hanuman and the vanaras. He defeats Ravana and returns to Ayodhya to establish just rule.</p>
+          <div class="card-detail"><div><p class="mt-3 border-t border-amber-100 pt-3 text-sm leading-6 text-stone-600">The Ramayana celebrates Rama’s fidelity to duty, Sita’s strength, and Hanuman’s selfless devotion.</p></div></div><button class="card-toggle mt-4 inline-flex items-center gap-2 text-sm font-semibold text-amber-800 hover:text-amber-950" aria-expanded="false">Read more <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 11.168l3.71-3.94a.75.75 0 1 1 1.09 1.03l-4.25 4.51a.75.75 0 0 1-1.09 0l-4.25-4.51a.75.75 0 0 1 .02-1.06Z" clip-rule="evenodd"/></svg></button>
+        </article>
+        <article class="card rounded-2xl border border-amber-300 bg-white p-5 shadow-sm ring-1 ring-amber-100" data-name="Krishna" data-yuga="Dvapara Yuga" data-open="false">
+          <div class="flex items-start justify-between gap-3"><span class="rounded-full bg-amber-100 px-3 py-1 text-xs font-bold uppercase tracking-wider text-amber-900">08 · Dvapara Yuga</span><span class="text-2xl text-amber-700" aria-hidden="true">✿</span></div>
+          <h3 class="mt-4 font-serif text-2xl">Krishna <span class="ml-1 align-middle font-sans text-xs font-bold uppercase tracking-wider text-amber-700">Svayam Bhagavan</span></h3><p class="mt-2 text-sm leading-6 text-stone-600">In the Bhagavad-gita, Krishna guides Arjuna on the battlefield and reveals the path of loving devotion. In Vrindavana, His enchanting pastimes with His devotees express the sweetness of the Supreme Person.</p>
+          <div class="card-detail"><div><p class="mt-3 border-t border-amber-100 pt-3 text-sm leading-6 text-stone-600">ISKCON follows the Gaudiya Vaishnava understanding that Krishna is the original source of all incarnations, as described in the Bhagavata Purana.</p></div></div><button class="card-toggle mt-4 inline-flex items-center gap-2 text-sm font-semibold text-amber-800 hover:text-amber-950" aria-expanded="false">Read more <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 11.168l3.71-3.94a.75.75 0 1 1 1.09 1.03l-4.25 4.51a.75.75 0 0 1-1.09 0l-4.25-4.51a.75.75 0 0 1 .02-1.06Z" clip-rule="evenodd"/></svg></button>
+        </article>
+        <article class="card rounded-2xl border border-stone-200/80 bg-white p-5 shadow-sm" data-name="Buddha" data-yuga="Kali Yuga" data-open="false">
+          <div class="flex items-start justify-between gap-3"><span class="rounded-full bg-amber-50 px-3 py-1 text-xs font-bold uppercase tracking-wider text-amber-800">09 · Kali Yuga</span><span class="text-2xl" aria-hidden="true">☸</span></div>
+          <h3 class="mt-4 font-serif text-2xl">Buddha</h3><p class="mt-2 text-sm leading-6 text-stone-600">The Buddha avatar teaches compassion and nonviolence in an age when religious practice had become distorted. His message turns people away from needless harm and toward a more thoughtful life.</p>
+          <div class="card-detail"><div><p class="mt-3 border-t border-amber-100 pt-3 text-sm leading-6 text-stone-600">In the Bhagavata tradition, this appearance is understood as the Lord’s response to the needs and conditions of its time.</p></div></div><button class="card-toggle mt-4 inline-flex items-center gap-2 text-sm font-semibold text-amber-800 hover:text-amber-950" aria-expanded="false">Read more <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 11.168l3.71-3.94a.75.75 0 1 1 1.09 1.03l-4.25 4.51a.75.75 0 0 1-1.09 0l-4.25-4.51a.75.75 0 0 1 .02-1.06Z" clip-rule="evenodd"/></svg></button>
+        </article>
+        <article class="card rounded-2xl border border-stone-200/80 bg-white p-5 shadow-sm" data-name="Kalki" data-yuga="Kali Yuga" data-open="false">
+          <div class="flex items-start justify-between gap-3"><span class="rounded-full bg-amber-50 px-3 py-1 text-xs font-bold uppercase tracking-wider text-amber-800">10 · Kali Yuga</span><span class="text-2xl" aria-hidden="true">✧</span></div>
+          <h3 class="mt-4 font-serif text-2xl">Kalki</h3><p class="mt-2 text-sm leading-6 text-stone-600">At the close of Kali Yuga, the Lord is foretold to appear as Kalki, riding a white horse. He will end the age of corruption and inaugurate a renewed era of dharma.</p>
+          <div class="card-detail"><div><p class="mt-3 border-t border-amber-100 pt-3 text-sm leading-6 text-stone-600">Kalki points to the eventual restoration of order and the continuing protection of the world through time.</p></div></div><button class="card-toggle mt-4 inline-flex items-center gap-2 text-sm font-semibold text-amber-800 hover:text-amber-950" aria-expanded="false">Read more <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 11.168l3.71-3.94a.75.75 0 1 1 1.09 1.03l-4.25 4.51a.75.75 0 0 1-1.09 0l-4.25-4.51a.75.75 0 0 1 .02-1.06Z" clip-rule="evenodd"/></svg></button>
+        </article>
+      </div>
+      <p id="empty-state" class="hidden rounded-2xl border border-dashed border-stone-300 bg-white/60 px-6 py-12 text-center text-stone-600">No avatars match that search. Try a name or yuga such as “Rama” or “Treta”.</p>
+    </section>
+    <aside class="mx-auto mt-12 max-w-3xl rounded-2xl border border-amber-200 bg-amber-50/70 px-5 py-5 text-center text-sm leading-6 text-stone-600 sm:px-8"><span class="font-semibold text-stone-800">A note on tradition:</span> Accounts and avatar lists vary across Vaishnava texts and traditions. This guide presents the familiar ten-avatar list with the Krishna-centered understanding taught in the ISKCON tradition.</aside>
+  </main>
+
+  <footer class="border-t border-amber-200/70 bg-[#f6efe2] px-5 py-8 text-center">
+    <p class="font-serif text-lg text-stone-800">May the stories of the Lord inspire devotion and compassion.</p>
+    <p class="mt-2 text-xs font-semibold uppercase tracking-[.2em] text-amber-800">Hare Krishna</p>
+    <p class="mt-4 text-xs text-stone-500">A respectful introduction to the Dashavatara</p>
+  </footer>
+  <script>
+    const search = document.getElementById('avatar-search');
+    const cards = [...document.querySelectorAll('#avatar-grid .card')];
+    const count = document.getElementById('result-count');
+    const empty = document.getElementById('empty-state');
+    search.addEventListener('input', () => {
+      const query = search.value.trim().toLocaleLowerCase();
+      let visible = 0;
+      cards.forEach(card => {
+        const matches = `${card.dataset.name} ${card.dataset.yuga}`.toLocaleLowerCase().includes(query);
+        card.hidden = !matches;
+        if (matches) visible++;
+      });
+      count.textContent = query ? `Showing ${visible} of ${cards.length} avatars` : `Showing all ${cards.length} avatars`;
+      empty.classList.toggle('hidden', visible !== 0);
+    });
+    document.querySelectorAll('.card-toggle').forEach(button => {
+      button.addEventListener('click', () => {
+        const card = button.closest('.card');
+        const open = card.dataset.open !== 'true';
+        card.dataset.open = String(open);
+        button.setAttribute('aria-expanded', String(open));
+        button.firstChild.textContent = open ? 'Read less ' : 'Read more ';
+      });
+    });
+  </script>
+</body>
+</html>
